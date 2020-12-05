@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title class="title">
+      Geolocalización
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <p class="posicionTit">Su posición es:</p>
+  <p class="posicion">Latitud: {{lat}}</p>
+  <p class="posicion">Longitud: {{lon}}</p>
+
+  <p class="posicionTit">Si quiere conocer su distancia a otro pais, escriba el nombre del país:</p>
+  <ion-searchbar class="searchBar" [(ngModel)]="busqueda" (ionChange)="cambio()"></ion-searchbar>
+  <p class="posicion">Su distancia es: {{total}}</p>
+
+</ion-content>
